@@ -1,0 +1,33 @@
+package projetometodos;
+
+import java.util.Scanner;
+
+public class ProjetoMetodos {
+
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        showMessage();
+        for (int i = 1; i <= 5; i++) {
+            showMessage();
+        }
+       show(1);
+       show(2);
+       show(3);
+    }
+
+    public static void showMessage() {
+        System.out.println("Boa tarde!");
+        System.out.println("Aula de metodos");
+        System.out.println("Sou xiru");
+    }
+
+    public static void show(int op) {
+        if (op == 1) {
+            System.out.println("Bom dia!");
+        } else if (op == 2) {
+            System.out.println("Boa tarde!");
+        } else {
+            System.out.println("Boa noite!");
+        }
+    }
+}
